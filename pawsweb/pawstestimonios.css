@@ -1,0 +1,19 @@
+.testimonio {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testimonio h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  font-style: normal;
+  color: #1e90ff;
+}

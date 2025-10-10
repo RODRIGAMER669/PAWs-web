@@ -1,0 +1,43 @@
+#como-funciona {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+#como-funciona h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.stats {
+  flex: 1;
+  text-align: center;
+}
+
+.stats strong {
+  display: block;
+  font-size: 1.5em;
+  color: teal;
+}
+
+.text-img {
+  flex: 2;
+}
+
+.text-img img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+  }
+}

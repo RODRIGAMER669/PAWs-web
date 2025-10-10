@@ -1,0 +1,72 @@
+/* Estilo básico para la sección */
+#contacto {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Estilo del formulario */
+form {
+  display: block;
+}
+
+label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+input, select, textarea {
+  width: calc(100% - 20px);  /* Todos los campos tienen el mismo ancho */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-left: 10px;  /* Añadido margen a la izquierda */
+  margin-right: 10px; /* Añadido margen a la derecha */
+}
+
+button {
+  width: calc(100% - 20px);  /* El botón también tendrá margen */
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Estilo para pantallas pequeñas */
+@media (max-width: 600px) {
+  #contacto {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  input, select, textarea, button {
+    font-size: 0.9rem;
+  }
+}
