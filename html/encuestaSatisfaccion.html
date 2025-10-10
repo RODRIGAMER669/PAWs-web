@@ -41,9 +41,9 @@
             transition: background-color 0.3s;
         }
         .rating input[type="radio"]:checked + label {
-            background-color: #007bff;
+            background-color:  #89DE34;
             color: white;
-            border-color: #007bff;
+            border-color:  #89DE34;
         }
         textarea {
             width: 100%;
@@ -58,7 +58,7 @@
             display: block;
             margin: 20px auto 0;
             padding: 12px 25px;
-            background-color: #007bff;
+            background-color: #89DE34;
             border: none;
             border-radius: 5px;
             color: white;
@@ -66,7 +66,7 @@
             cursor: pointer;
         }
         button:hover {
-            background-color: #0056b3;
+            background-color: #528C17;
         }
     </style>
 </head>
@@ -74,7 +74,7 @@
     <h1>Encuesta de Satisfacción</h1>
     <h3>Valora los campos del 1 al 5 tu experiencia en la pagina</h3>
     <form>
-        <label>1. Claridad de la pagina:</label>
+        <label>1. ¿Qué tan fácil te resultó navegar por el portal?</label>
         <div class="rating">
             <input type="radio" id="producto-1" name="producto" value="1" required /><label for="producto-1">1</label>
             <input type="radio" id="producto-2" name="producto" value="2" /><label for="producto-2">2</label>
@@ -83,7 +83,7 @@
             <input type="radio" id="producto-5" name="producto" value="5" /><label for="producto-5">5</label>
         </div>
 
-        <label>2. Encontraste lo que buscabas:</label>
+        <label>2. ¿Encontraste rápidamente la información que buscabas (por ejemplo, mascotas disponibles, requisitos, contacto, etc.)?</label>
         <div class="rating">
             <input type="radio" id="atencion-1" name="atencion" value="1" required /><label for="atencion-1">1</label>
             <input type="radio" id="atencion-2" name="atencion" value="2" /><label for="atencion-2">2</label>
@@ -92,7 +92,7 @@
             <input type="radio" id="atencion-5" name="atencion" value="5" /><label for="atencion-5">5</label>
         </div>
 
-        <label>3. Tiempo de entrega:</label>
+        <label>3. ¿Cómo calificarías el proceso de registro o solicitud para acoger una mascota?</label>
         <div class="rating">
             <input type="radio" id="entrega-1" name="entrega" value="1" required /><label for="entrega-1">1</label>
             <input type="radio" id="entrega-2" name="entrega" value="2" /><label for="entrega-2">2</label>
@@ -101,7 +101,46 @@
             <input type="radio" id="entrega-5" name="entrega" value="5" /><label for="entrega-5">5</label>
         </div>
 
-        <label>5. Deja tus opiniones y sugerencias:</label>
+        <label>4. ¿Qué tan satisfecho/a estás con la información disponible sobre las mascotas (fotos, descripciones, historial, necesidades especiales, etc.)?</label>
+        <div class="rating">
+            <input type="radio" id="entrega-1" name="entrega" value="1" required /><label for="entrega-1">1</label>
+            <input type="radio" id="entrega-2" name="entrega" value="2" /><label for="entrega-2">2</label>
+            <input type="radio" id="entrega-3" name="entrega" value="3" /><label for="entrega-3">3</label>
+            <input type="radio" id="entrega-4" name="entrega" value="4" /><label for="entrega-4">4</label>
+            <input type="radio" id="entrega-5" name="entrega" value="5" /><label for="entrega-5">5</label>
+        </div>
+
+        <label>5. ¿Qué tan útil te pareció la comunicación con el equipo o los responsables de las casas de acogida?</label>
+        <div class="rating">
+            <input type="radio" id="entrega-1" name="entrega" value="1" required /><label for="entrega-1">1</label>
+            <input type="radio" id="entrega-2" name="entrega" value="2" /><label for="entrega-2">2</label>
+            <input type="radio" id="entrega-3" name="entrega" value="3" /><label for="entrega-3">3</label>
+            <input type="radio" id="entrega-4" name="entrega" value="4" /><label for="entrega-4">4</label>
+            <input type="radio" id="entrega-5" name="entrega" value="5" /><label for="entrega-5">5</label>
+        </div>
+
+        <label>6. ¿Recomendarías este portal a otras personas interesadas en adoptar o acoger mascotas?</label>
+        <div class="rating">
+            <input type="radio" id="entrega-1" name="entrega" value="1" required /><label for="entrega-1">1</label>
+            <input type="radio" id="entrega-2" name="entrega" value="2" /><label for="entrega-2">2</label>
+            <input type="radio" id="entrega-3" name="entrega" value="3" /><label for="entrega-3">3</label>
+            <input type="radio" id="entrega-4" name="entrega" value="4" /><label for="entrega-4">4</label>
+            <input type="radio" id="entrega-5" name="entrega" value="5" /><label for="entrega-5">5</label>
+        </div>
+
+        <label>7. ¿Qué tan satisfecho/a estás con el tiempo de respuesta del portal (consultas, aprobación, seguimiento, etc.)?</label>
+        <div class="rating">
+            <input type="radio" id="entrega-1" name="entrega" value="1" required /><label for="entrega-1">1</label>
+            <input type="radio" id="entrega-2" name="entrega" value="2" /><label for="entrega-2">2</label>
+            <input type="radio" id="entrega-3" name="entrega" value="3" /><label for="entrega-3">3</label>
+            <input type="radio" id="entrega-4" name="entrega" value="4" /><label for="entrega-4">4</label>
+            <input type="radio" id="entrega-5" name="entrega" value="5" /><label for="entrega-5">5</label>
+        </div>
+
+        <label>8. ¿Qué fue lo que más te gustó del portal?</label>
+        <textarea name="sugerencias" placeholder="Escribe tus sugerencias aquí..."></textarea>
+
+        <label>9. ¿Tienes algún comentario o sugerencia adicional para mejorar tu experiencia?</label>
         <textarea name="sugerencias" placeholder="Escribe tus sugerencias aquí..."></textarea>
 
         <button type="submit">Enviar encuesta</button>
