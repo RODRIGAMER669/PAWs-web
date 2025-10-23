@@ -46,3 +46,12 @@
     color:rgb(137, 222, 52);
     background-color: #ffffff;
 }
+
+.btn:hover {
+    background-color: #528C17;
+}
+
+.btn-secondary:hover {
+    color:#ffffff;
+    background-color: #528C17;
+}
