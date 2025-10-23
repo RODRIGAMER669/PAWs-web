@@ -1,0 +1,103 @@
+body {
+    background-image: url('../imagenes/FondoTemporal2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    text-align: left;
+    font-family: "play";
+    font-size: 30px;
+}
+
+h2 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: "play";
+    font-size: 50px;
+}
+
+h3 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+h4 {
+    color: rgb(0, 166, 42);
+}
+
+h5 {
+    color: rgb(0, 166, 42);
+    text-align: center;
+    font-size: 25px;
+}
+
+h6 {
+    color: rgb(0, 166, 42);
+    text-align: center;
+    font-size: 40px;
+}
+
+p {
+    color: rgb(110, 7, 245);
+}
+
+
+/*MENU*/
+
+#menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: #43ab43;
+    padding: 15px 30px;
+    justify-content: flex-end;
+    display: flex;
+    gap: 50px;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.286);
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    white-space: nowrap;
+    word-spacing: 8px;
+    transition: color 0.3s ease;
+}
+
+
+/*RESEÑAS*/
+.reseñas {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    flex-wrap: wrap;
+    gap: 100%;
+}
+
+.reseñas-objeto {
+    background-color: #000000;
+    color: rgb(0, 255, 0);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.reseñas-objeto2 {
+    background-color: #04ff00;
+}
+
+.contenido-pagina {
+    margin-top: 70px;
+    text-align: center;
+}

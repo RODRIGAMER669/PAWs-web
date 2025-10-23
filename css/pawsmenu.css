@@ -24,3 +24,34 @@
     color: white;
     border-radius: 4px;
 }
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff; /* Fondo blanco para que no se transparente */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  z-index: 1000; /* Asegura que quede encima del contenido */
+}
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+}
+
+.logo img {
+  height: 50px; /* ajusta según tu logo */
+  width: auto;
+  display: block;
+}
+
+.div-left {
+    display: flex;
+    align-items: start;
+}
