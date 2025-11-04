@@ -1,0 +1,111 @@
+.footer {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-brand {
+  flex: 1;
+  min-width: 250px;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #cccccc;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  font-size: 24px;
+  color: #f0f0f0;
+}
+
+.social-icons a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.material-icons {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.material-icons:hover {
+  color: #ffffff;
+}
+
+.footer-links,
+.footer-services {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-links h4,
+.footer-services h4 {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.footer-links ul,
+.footer-services ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li,
+.footer-services li {
+  margin-bottom: 10px;
+}
+
+.footer-links a,
+.footer-services a {
+  color: #cccccc;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.footer-links a:hover,
+.footer-services a:hover {
+  color: #ffffff;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333333;
+  margin-top: 40px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 0.85rem;
+  color: #aaaaaa;
+}
+
+.legal-links a {
+  margin-left: 20px;
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+.legal-links a:hover {
+  color: #ffffff;
+}

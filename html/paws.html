@@ -10,190 +10,393 @@
   <link rel="stylesheet" href="../css/pawstestimonios.css">
   <link rel="stylesheet" href="../css/pawsformulario.css">
   <link rel="stylesheet" href="../css/pawsadopciones.css">
+  <link rel="stylesheet" href="../css/footer.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 <body>
   <header>
+    <!--MENU-->
     <nav class="nav-menu">
-      <div class="div-left">
-        <a class="logo">
-          <img src="../resources/imagenes/P.png">
-        </a>
-      </div>
-
-      <div class="nav-links">
-        <a href="#inicio" class="nav-link">Inicio</a>
-        <a href="#como-funciona" class="nav-link">Cómo funciona</a>
-        <a href="#refugios-verificados" class="nav-link">Refugios</a>
-        <a href="#adopciones" class="nav-link">Adopciones</a>
-        <a href="#contacto" class="nav-link">Contacto</a>   
-        <a href="#donaciones" class="nav-link">Donar</a>
-      </div>     
+      <a href="#inicio" class="nav-link">Inicio</a>
+      <a href="#como-funciona" class="nav-link">Cómo funciona</a>
+      <a href="#refugios-verificados" class="nav-link">Refugios</a>
+      <a href="#adopciones" class="nav-link">Adopciones</a>
+      <a href="#contacto" class="nav-link">Contacto</a>   
+      <a href="#donaciones" class="nav-link">Donar</a>
     </nav>
   </header>
 
+  <!--IMAGEN PRINCIPAL-->
     <section id="inicio" class="hero">
-    <div class="container hero-content">
-        <div class="image-text-wrapper">
-        <img class="image1" src="../resources/imagenes/perrogato.jpg" alt="Imagen principal de portada"/>
-        <div class="text-overlay">
-            <h1>Conectamos corazones con nuevos hogares</h1>
-            <p style="color: #FFFFFF;">La plataforma que une refugios de toda España con familias que buscan adoptar</p>
-            <a href="#adopciones" class="btn">Buscar mascotas</a>
-            <a href="#refugios-verificados" class="btn btn-secondary">Registrar tu refugio</a>
-        </div>
-        </div>
-    </div>
+      <div class="container hero-content">
+          <div class="image-text-wrapper">
+          <img class="image1" src="../resources/imagenes/perrogato.jpg" alt="Imagen principal de portada"/>
+          <div class="text-overlay">
+              <p style="color: #FFFFFF;" style="font-size: 1.2rem;">Conectamos corazones con nuevos hogares</p>
+              <p style="color: #FFFFFF;">La plataforma que une refugios de toda España con familias que buscan adoptar</p>
+              <a href="#adopciones" class="btn">Buscar mascotas</a>
+              <a href="#refugios-verificados" class="btn btn-secondary">Registrar tu refugio</a>
+          </div>
+          </div>
+      </div>
     </section>
 
-
   <main>
-  <section id="como-funciona">
-  <h2>Cómo Funciona PAWs</h2>
-  <div class="container">
-    <div class="stats">
-      <div><strong>200+</strong><br>Refugios Conectados</div>
-      <div><strong>15,000+</strong><br>Adopciones Exitosas</div>
-      <div><strong>10,000+</strong><br>Familias Registradas</div>
-      <div><strong>5</strong><br>años conectando vidas</div>
+    <!--SECCION FUNCIONAMIENTO PAWS-->
+    <section id="como-funciona">
+      <h2>Cómo Funciona PAWs</h2>
+      <div class="container">
+        <div class="stats">
+          <div>
+            <i class="material-icons">home</i>
+            <strong>50+</strong><br>Refugios Conectados
+          </div>
+        <div>
+          <i class="material-icons">pets</i>
+          <strong>5,000+</strong><br>Adopciones Exitosas
+        </div>
+        <div>
+          <i class="material-icons">group</i>
+          <strong>4,000+</strong><br>Familias Registradas
+        </div>
+        <div>
+          <i class="material-icons">calendar_today</i>
+          <strong>5</strong><br>Años Conectando Vidas
+        </div>
+          </div>
+          <div class="text-img">
+            <p>PAWs, pet for you, es la plataforma líder en España que conecta refugios y protectoras con personas que desean adoptar. Facilitamos el proceso de adopción mediante una red confiable de centros verificados. Trabajamos con más de 50 refugios en toda España, proporcionando una plataforma segura donde las familias pueden encontrar su compañero perfecto y los refugios pueden dar visibilidad a todos sus animales.</p>
+        </div>
+      </div>
+    </section>
+  <!--SECCION DE REFUGIOS-->
+  <section class="refugios">
+    <h1>Refugios Verificados</h1>
+    <p>Trabajamos con una red confiable de refugios y protectoras en toda España. Todos nuestros centros están verificados y cumplen con altos estándares de cuidado animal.</p>
+
+    <div class="cards-container">
+      <!-- Refugio 1 -->
+      <div class="card">
+        <img src="../resources/imagenes/protectora2.png" alt="Refugio Esperanza Madrid">
+        <div class="card-content">
+          <h2>Refugio Esperanza</h2>
+          <p class="location">📍 Leganés, Madrid</p>
+          <p class="disponibles">🐾 32 animales disponibles</p>
+          <div class="tags">
+            <span>Perros Salvados</span>
+            <span>Gatos Especiales</span>
+          </div>
+          <a href="#" class="contactar">Contactar</a>
+        </div>
+        <span class="verificado">Verificado</span>
+      </div>
+      <!-- Refugio 2 -->
+      <div class="card">
+        <img src="../resources/imagenes/protectora1.png" alt="Protectora Felina Barcelona">
+        <div class="card-content">
+          <h2>Protectora Felina</h2>
+          <p class="location">📍 Badalona, Barcelona</p>
+          <p class="disponibles">🐾 41 animales disponibles</p>
+          <div class="tags">
+            <span>Gatos Felinos</span>
+            <span>Adopción Senior</span>
+          </div>
+          <a href="#" class="contactar">Contactar</a>
+        </div>
+        <span class="verificado">Verificado</span>
+      </div>
+      <!-- Refugio 3 -->
+      <div class="card">
+        <img src="../resources/imagenes/protectora3.png" alt="Asociación Patitas Valencia">
+        <div class="card-content">
+          <h2>Asociación Patitas</h2>
+          <p class="location">📍 Requena, Valencia</p>
+          <p class="disponibles">🐾 28 animales disponibles</p>
+          <div class="tags">
+            <span>Perros Senior</span>
+            <span>Adopción Felina</span>
+          </div>
+          <a href="#" class="contactar">Contactar</a>
+        </div>
+        <span class="verificado">Verificado</span>
+      </div>
     </div>
-    <div class="text-img">
-      <p>AdoptaVida es la plataforma líder en España que conecta refugios y protectoras con personas que desean adoptar. Facilitamos el proceso de adopción mediante una red confiable de centros verificados. Trabajamos con más de 200 refugios en toda España, proporcionando una plataforma segura donde las familias pueden encontrar su compañero perfecto y los refugios pueden dar visibilidad a todos sus animales.</p>
-      <img src="ruta-de-tu-imagen.jpg" alt="Imagen PAWs">
+  </section>
+
+  <div class="registro-refugio">
+    <h2>¿Eres un Refugio o Protectora?</h2>
+    <p>
+      Únete a nuestra red de refugios verificados y da más visibilidad a tus animales.
+      Es gratuito y te ayudaremos a encontrar hogares para todos tus compañeros.
+    </p>
+    <button>Registrar Mi Refugio</button>
+  </div>
+  <!--SECCION DE ADOPCIONES-->
+  <section id="adopciones" class="section container">
+    <h2>Animales disponibles para adopción</h2>
+    <div class="gallery">
+      <!-- Tarjeta 1 -->
+      <div class="card animal">
+        <span class="badge">Disponible</span>
+        <img src="../resources/imagenes/perro1.png" alt="Perro Luna" />
+        <div class="info">
+          <h3>Luna</h3>
+          <p class="meta">Perro • 2 años • Mediano • Hembra</p>
+          <p class="location">📍 Leganés, Madrid</p>
+          <p class="refugio">Refugio Esperanza</p>
+          <p class="descripcion">Luna es una perrita muy cariñosa y juguetona. Le encanta correr y jugar con otros perros.</p>
+          <button>Conocer a Luna</button>
+        </div>
+      </div>
+      <!-- Tarjeta 2 -->
+      <div class="card animal">
+        <span class="badge">Disponible</span>
+        <img src="../resources/imagenes/gato1.png" alt="Gatito Milo" />
+        <div class="info">
+          <h3>Milo</h3>
+          <p class="meta">Gato • 3 meses • Pequeño • Macho</p>
+          <p class="location">📍 Badalona, Barcelona</p>
+          <p class="refugio">Protectora Felina</p>
+          <p class="descripcion">Milo es tranquilo y silencioso, ideal para familias con niños.</p>
+          <button>Conocer a Milo</button>
+        </div>
+      </div>
+      <!-- Tarjeta 3 -->
+      <div class="card animal">
+        <span class="badge">Disponible</span>
+        <img src="../resources/imagenes/gato2.png" alt="Gato Max" />
+        <div class="info">
+          <h3>Max</h3>
+          <p class="meta">Gato • 4 años • Grande • Macho</p>
+          <p class="location">📍 Requena, Valencia</p>
+          <p class="refugio">Asociación Patitas</p>
+          <p class="descripcion">Max es muy cariñoso y obediente, busca un hogar con espacio para jugar.</p>
+          <button>Conocer a Max</button>
+        </div>
+      </div>
+      <!-- Tarjeta 4 -->
+      <div class="card animal">
+        <span class="badge">Disponible</span>
+        <img src="../resources/imagenes/perro2.png" alt="Perra Bella" />
+        <div class="info">
+          <h3>Bella</h3>
+          <p class="meta">Perro • 5 años • Mediano • Hembra</p>
+          <p class="location">📍 Camas, Sevilla</p>
+          <p class="refugio">Casa de Animales</p>
+          <p class="descripcion">Bella es independiente pero muy cariñosa, ideal para familias con niños.</p>
+          <button>Conocer a Bella</button>
+        </div>
+      </div>
+      <!-- Tarjeta 5 -->
+      <div class="card animal">
+        <span class="badge">Disponible</span>
+        <img src="../resources/imagenes/perro3.png" alt="Perra Bella" />
+        <div class="info">
+          <h3>Tyson</h3>
+          <p class="meta">Perro • 5 años • Mediano • Macho</p>
+          <p class="location">📍 Parla, Madrid</p>
+          <p class="refugio">Protectora Parla</p>
+          <p class="descripcion">Tyson es inquieto, con mucha vitalidad y con neesidad de ser cuidado.</p>
+          <button>Conocer a Tyson</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="enlaces-wrapper">
+    <a href="#" class="filtro filtro-animales">Ver Todos los Animales</a>
+    <a href="#" class="filtro filtro-refugios">Filtrar por Refugio</a>
+  </div>
+  <!--SECCION DE PARTICIPACION-->
+  <section id="formas-de-participar">
+    <h2>Formas de Participar</h2>
+    <p>PAWs conecta personas con pasión por los animales con múltiples formas de ayudar. Desde adoptar hasta colaborar con refugios, hay una manera para que todos participen.</p>
+
+    <div class="participacion-grid">
+      <div class="participacion-box">
+        <i class="material-icons icon">pets</i>
+        <h3>Adoptar</h3>
+        <p>Explora miles de animales disponibles en refugios de toda España y encuentra tu compañero perfecto.</p>
+        <button>Buscar Mascotas</button>
+      </div>
+
+      <div class="participacion-box">
+        <i class="material-icons icon">home</i>
+        <h3>Registrar Refugio</h3>
+        <p>¿Tienes un refugio o protectora? Únete a nuestra plataforma para dar visibilidad a tus animales.</p>
+        <button>Registrarse Gratis</button>
+      </div>
+
+      <div class="participacion-box">
+        <i class="material-icons icon">volunteer_activism</i>
+        <h3>Voluntariado</h3>
+        <p>Conectamos voluntarios con refugios locales. Encuentra oportunidades cerca de ti.</p>
+        <button>Ser Voluntario</button>
+      </div>
+
+      <div class="participacion-box">
+        <i class="material-icons icon">card_giftcard</i>
+        <h3>Donar a Refugios</h3>
+        <p>Apoya directamente a los refugios de nuestra red. Cada donación llega al refugio seleccionado.</p>
+        <button>Donar</button>
+      </div>
+
+      <div class="participacion-box">
+        <i class="material-icons icon">hotel</i>
+        <h3>Hogar Temporal</h3>
+        <p>Conecta con animales en refugios que necesitan cuidados especiales según tu disponibilidad.</p>
+        <button>Información de Acogida</button>
+      </div>
+
+      <div class="participacion-box">
+        <i class="material-icons icon">share</i>
+        <h3>Compartir</h3>
+        <p>Ayúdanos a conectar más familias con compañeros de compañía. AdoptaFácil ya tiene redes sociales.</p>
+        <button>Compartir Plataforma</button>
+      </div>
+    </div>
+  </section>
+  <!--SECCION RESEÑAS-->
+  <section id="historias-exito">
+    <h2>Historias de Éxito</h2>
+    <p>Cada adopción es una historia de amor. Conoce las experiencias de familias que han encontrado su compañero perfecto y voluntarios que dedican su tiempo a esta noble causa.</p>
+
+    <div class="testimonios-grid">
+      <div class="testimonio-box">
+        <div class="estrellas">★★★★★</div>
+        <h3>María González</h3>
+        <p class="detalle">Rocky – Refugio Esperanza Madrid (2024)</p>
+        <p class="comentario">“Adoptarás más un guía al encontrar a Rocky. Pudimos comparar diferentes refugios y encontrar el más perfecto para nuestra familia. ¡Gracias por ayudarnos a tener un nuevo refugio!”</p>
+      </div>
+
+      <div class="testimonio-box">
+        <div class="estrellas">★★★★★</div>
+        <h3>Laura Refugio Patitas</h3>
+        <p class="detalle">Max – Refugio Patitas (2024)</p>
+        <p class="comentario">“Desde que nos registramos en AdoptaVida, hemos comparado 30 adopciones por mes en nuestra región. ¡Es una herramienta que ha cambiado completamente nuestra perspectiva!”</p>
+      </div>
+
+      <div class="testimonio-box">
+        <div class="estrellas">★★★★★</div>
+        <h3>Ana López</h3>
+        <p class="detalle">Mimi – Protectora Felina Barcelona (2024)</p>
+        <p class="comentario">“Encontré a Mimi a través de AdoptaVida. Me encanta que se pueda buscar por tipo de especie, ubicación e incluso ver los perfiles de los refugios antes de contactar.”</p>
+      </div>
+    </div>
+  </section>
+  <!--SECCION DE CONTACTO-->
+  <section class="contacto-seccion">
+  <div class="contacto-contenedor">
+    <h1 class="contacto-titulo">Contáctanos</h1>
+    <p class="contacto-subtitulo">
+      ¿Necesitas ayuda con la plataforma, quieres registrar tu refugio o tienes preguntas sobre adopciones? Nuestro equipo está aquí para ayudarte.
+    </p>
+    <div class="contacto-flex">
+      <form class="contacto-formulario">
+        <h2 class="formulario-titulo">Envíanos un Mensaje</h2>
+        <div class="formulario-grupo">
+          <div class="formulario-campo">
+            <label for="nombre">Tu nombre</label>
+            <input type="text" id="nombre" placeholder="Nombre">
+          </div>
+          <div class="formulario-campo">
+            <label for="apellidos">Apellidos</label>
+            <input type="text" id="apellidos" placeholder="Apellidos">
+          </div>
+        </div>
+        <div class="formulario-grupo">
+          <div class="formulario-campo">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="tu@email.com">
+          </div>
+          <div class="formulario-campo">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" placeholder="+34 ">
+          </div>
+        </div>
+        <div class="formulario-campo">
+          <label for="asunto">Asunto</label>
+          <input type="text" id="asunto" placeholder="Selecciona un motivo">
+        </div>
+        <div class="formulario-campo">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" placeholder="Cuéntanos en qué podemos ayudarte..."></textarea>
+        </div>
+        <button type="submit" class="formulario-boton">Enviar Mensaje</button>
+      </form>
+
+      <div class="contacto-info">
+        <div class="info-bloque">
+          <h3>Ubicación sede</h3>
+          <p>Calle de la Amapola, 45<br>28015 Madrid, España</p>
+        </div>
+        <div class="info-bloque">
+          <h3>Teléfono</h3>
+          <p>+34 911 23 45 67<br>+34 678 90 12 34</p>
+        </div>
+        <div class="info-bloque">
+          <h3>Email</h3>
+          <p>info@paws.es<br>refugios@paws.es</p>
+        </div>
+        <div class="info-bloque">
+          <h3>Horarios de Visita</h3>
+          <p>Lunes a Viernes: 10:00 - 19:00<br>Sábados: 10:00 - 14:00<br>Domingos: Cerrado</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-
-    <section id="refugios-verificados" class="section container">
-      <h2>Refugios Verificados</h2>
-      
-      <div class="gallery">
-        <div class="card">
-          <h3>Refugio Esperanza</h3>
-          <p><strong>Ubicación:</strong> Madrid</p>
-          <p><strong>Contacto:</strong> info@refugioesperanza.es</p>
-          <p>Más de 200 animales rescatados y cuidados con amor y dedicación.</p>
-        </div>
-        <div class="card">
-          
-          <h3>Protectora Patitas</h3>
-          <p><strong>Ubicación:</strong> Barcelona</p>
-          <p><strong>Contacto:</strong> contacto@protectorapatitas.org</p>
-          <p>Fomentando adopciones responsables desde 2010 con voluntarios comprometidos.</p>
-        </div>
-        <div class="card">
-          
-          <h3>Hogar Peludo</h3>
-          <p><strong>Ubicación:</strong> Valencia</p>
-          <p><strong>Contacto:</strong> hola@hogarpeludo.com</p>
-          <p>Voluntarios dedicados al rescate, rehabilitación y nuevas oportunidades para mascotas.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="adopciones" class="section container">
-      <h2>Animales disponibles para adopción</h2>
-      <div class="gallery">
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=400&q=80" alt="Perro Luna" />
-          <h3>Luna</h3>
-          <p><strong>Tipo:</strong> Perro</p>
-          <p><strong>Edad:</strong> 3 años</p>
-          <p><strong>Refugio:</strong> Refugio Esperanza</p>
-        </div>
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?auto=format&fit=crop&w=400&q=80" alt="Gato Simba" />
-          <h3>Simba</h3>
-          <p><strong>Tipo:</strong> Gato</p>
-          <p><strong>Edad:</strong> 2 años</p>
-          <p><strong>Refugio:</strong> Protectora Patitas</p>
-        </div>
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=400&q=80" alt="Perro Rocky" />
-          <h3>Rocky</h3>
-          <p><strong>Tipo:</strong> Perro</p>
-          <p><strong>Edad:</strong> 5 años</p>
-          <p><strong>Refugio:</strong> Hogar Peludo</p>
-        </div>
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1558784207-7ca34c4a5486?auto=format&fit=crop&w=400&q=80" alt="Gata Mia" />
-          <h3>Mia</h3>
-          <p><strong>Tipo:</strong> Gato</p>
-          <p><strong>Edad:</strong> 1 año</p>
-          <p><strong>Refugio:</strong> Refugio Esperanza</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="testimonios" class="section container">
-      <h2>Testimonios</h2>
-
-      <div class="testimonio">
-        <h3>María López - Adoptante</h3>
-        <p>"Gracias a AdoptaVida encontré a mi perro Rocky. El proceso fue sencillo y pude contactar con el refugio sin problemas. Recomiendo esta plataforma a todos."</p>
-      </div>
-
-      <div class="testimonio">
-        <h3>Refugio Esperanza</h3>
-        <p>"Desde que estamos en AdoptaVida hemos logrado más adopciones responsables y hemos llegado a más personas que realmente quieren ayudar."</p>
-      </div>
-
-      <div class="testimonio">
-        <h3>Carlos Pérez - Adoptante</h3>
-        <p>"Me encantó la variedad de animales disponibles y la información detallada de cada refugio. Una plataforma que hace la diferencia."</p>
-      </div>
-
-      <div class="testimonio">
-        <h3>Protectora Patitas</h3>
-        <p>"AdoptaVida nos ha permitido tener una presencia más visible y ha facilitado el contacto directo con futuros adoptantes."</p>
-      </div>
-    </section>
-
-    <section id="contacto" class="section container">
-      <h2>Contacto y Donaciones</h2>
-      <p>¿Quieres registrar tu refugio o contactar con alguno? Escríbenos.</p>
-        <form action="#" method="POST">
-          <label for="nombre">Nombre</label>
-          <input type="text" id="nombre" name="nombre" required />
-
-          <label for="email">Correo electrónico</label>
-          <input type="email" id="email" name="email" required />
-
-          <label for="tipo-contacto">¿Eres?</label>
-            <select id="tipo-contacto" name="tipo-contacto" required>
-              <option value="">Selecciona</option>
-              <option value="Adoptante">Adoptante</option>
-              <option value="Refugio">Refugio/Protectora</option>
-              <option value="Voluntario">Voluntario</option>
-              <option value="Otro">Otro</option>
-            </select>
-
-          <label for="mensaje">Mensaje</label>
-          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-
-          <label for="donacion">¿Quieres hacer una donación? (opcional)</label>
-          <input type="number" id="donacion" name="donacion" min="0" placeholder="Cantidad en €" />
-
-      <button type="submit" class="btn">Enviar</button>
-  </form>
-</section>
-
   </main>
-
+  <!--FOOTER-->
   <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 Pet For You. Plataforma centralizada para adopciones en España.</p>
-      <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#como-funciona">Cómo Funciona</a>
-        <a href="#refugios-verificados">Refugios Verificados</a>
-        <a href="#adopciones">Adopciones</a>
-        <a href="#testimonios">Testimonios</a>
-        <a href="#contacto">Contacto</a>
-        <a href="encuestaSatisfaccion.html">Danos tu opinión</a>
-      </nav>
+  <div class="footer-container">
+    <div class="footer-brand">
+      <img src="../resources/imagenes/LOGO.png" alt="Logo P con perro" class="logo">
+      <p class="description">
+        La plataforma líder en España que conecta refugios verificados con familias que buscan adoptar. Facilitamos encuentros que cambian vidas.
+      </p>
+      <div class="social-icons">
+        <a href="#"><i class="material-icons">photo_camera</i></a>
+        <a href="#"><i class="material-icons">facebook</i></a>
+        <a href="#"><i class="material-icons">alternate_email</i></a>
+        <a href="#"><i class="material-icons">share</i></a>
+      </div>
     </div>
-  </footer>
+
+    <div class="footer-links">
+      <h4>Enlaces Rápidos</h4>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Cómo Funciona</a></li>
+        <li><a href="#">Adopciones</a></li>
+        <li><a href="#">Refugios</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-services">
+      <h4>Servicios</h4>
+      <ul>
+        <li><a href="#">Buscar Mascotas</a></li>
+        <li><a href="#">Registrar Refugio</a></li>
+        <li><a href="#">Para Voluntarios</a></li>
+        <li><a href="#">Ayuda</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2020 PAWs, Pet for you. Todos los derechos reservados.</p>
+    <div class="legal-links">
+      <a href="#">Política de Privacidad</a>
+      <a href="#">Términos de Uso</a>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
