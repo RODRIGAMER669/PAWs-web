@@ -148,7 +148,16 @@
           <p class="location">📍 Parla, Madrid</p>
           <p class="refugio">Refugio Alexis</p>
           <p class="descripcion">Lilo es un conejo pequeño y muy cariñoso. Le encanta dormir y jugar.</p>
-          <button>Conocer a Lilo</button>
+          <button id="btnLilo">Conocer a Lilo</button>
+          <script>
+        document.getElementById('btnLilo').addEventListener('click', function() {
+          // Abrir en la misma pestaña:
+          window.location.href = 'homenaje/Conejo_lilo.html';
+
+          // O, para abrir en nueva pestaña:
+          // window.open('https://tusitio.com/lilo.html', '_blank', 'noopener');
+        });
+</script>
         </div>
       </div>
       <!-- Tarjeta 2 -->

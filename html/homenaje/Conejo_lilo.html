@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Homenaje a mi conejo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f6f7fb;
+      --card:#ffffff;
+      --accent:#7c3aed;
+      --muted:#6b7280;
+      --glass: rgba(255,255,255,0.6);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;color:#0f172a;background:linear-gradient(180deg,#eef2ff 0%,var(--bg) 60%);}
+    .container{max-width:1000px;margin:36px auto;padding:20px}
+    .hero{display:grid;grid-template-columns:160px 1fr;gap:20px;align-items:center}
+    .avatar{width:160px;height:160px;border-radius:16px;overflow:hidden;box-shadow:0 8px 24px rgba(15,23,42,0.08);border:6px solid rgba(255,255,255,0.6)}
+    .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+    .title h1{margin:0;font-size:28px}
+    .title p{margin:6px 0;color:var(--muted)}
+    .card{background:var(--card);border-radius:14px;padding:18px;box-shadow:0 6px 20px rgba(15,23,42,0.06);}
+    .stats{display:flex;gap:12px;margin-top:12px}
+    .stat{background:linear-gradient(180deg,#fff,#fbfbff);padding:10px;border-radius:10px;min-width:90px;text-align:center}
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-top:18px}
+    .gallery img{width:100%;height:120px;object-fit:cover;border-radius:10px;cursor:pointer}
+    .section{margin-top:18px}
+    .timeline{display:flex;flex-direction:column;gap:12px}
+    .event{display:flex;gap:12px;align-items:flex-start}
+    .event .dot{width:12px;height:12px;background:var(--accent);border-radius:50%;margin-top:6px}
+    .controls{display:flex;gap:10px;margin-top:12px}
+    .btn{background:var(--accent);color:white;padding:10px 14px;border-radius:10px;border:0;cursor:pointer;font-weight:600}
+    .muted{color:var(--muted)}
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:14px}
+    /* lightbox */
+    .lightbox{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(2,6,23,0.6);z-index:50}
+    .lightbox img{max-width:92%;max-height:86%;border-radius:10px;box-shadow:0 12px 40px rgba(2,6,23,0.6)}
+    @media (max-width:640px){.hero{grid-template-columns:1fr;grid-auto-rows:auto}.avatar{margin:0 auto}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="hero card">
+      <div class="avatar">
+        <!-- Sustituye la URL por la foto de tu conejo -->
+        <img id="mainPhoto" src="../../resources/imagenes/conejo_lilo.jpeg" alt="Foto de tu conejo">
+      </div>
+      <div class="title">
+        <h1 id="rabbitName">Lilo</h1>
+        <p id="subtitle">Un homenaje a su vida, sus travesuras y sus siestas interminables.</p>
+        <div class="stats">
+          <div class="stat">
+            <div style="font-size:18px">Edad</div>
+            <div style="font-weight:700">9 años</div>
+          </div>
+          <div class="stat">
+            <div style="font-size:18px">Género</div>
+            <div style="font-weight:700">Macho</div>
+          </div>
+          <div class="stat">
+            <div style="font-size:18px">Color</div>
+            <div style="font-weight:700">Blanco y negro</div>
+          </div>
+        </div>
+        <div class="controls">
+          <button class="btn" onclick="downloadPage()">Descargar .html</button>
+          <button class="btn" onclick="printPage()">Imprimir / Guardar PDF</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card section">
+      <h2>Acerca de <span id="nameInline">Lilo</span></h2>
+      <p id="aboutText" class="muted">Muchas gracias Lilo por estos 9 de años de inolvidables recuerdos y espero que estes en un lugar tranquilo al igual que tú eras. Mil gracias</p>
+    </div>
+
+    <div class="card section">
+      <h2>Galería</h2>
+      <div class="gallery" id="gallery">
+        <!-- Imágenes de ejemplo: reemplaza con las tuyas -->
+        <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?q=80&w=800&auto=format&fit=crop" alt="foto 1" onclick="openLightbox(this.src)">
+        <img src="https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?q=80&w=800&auto=format&fit=crop" alt="foto 2" onclick="openLightbox(this.src)">
+        <img src="https://images.unsplash.com/photo-1560807707-8cc77767d783?q=80&w=800&auto=format&fit=crop" alt="foto 3" onclick="openLightbox(this.src)">
+        <img src="https://images.unsplash.com/photo-1504208434309-cb69f4fe52b0?q=80&w=800&auto=format&fit=crop" alt="foto 4" onclick="openLightbox(this.src)">
+      </div>
+    </div>
+
+    <div class="card section">
+      <h2>Momentos</h2>
+      <div class="timeline">
+        <div class="event">
+          <div class="dot"></div>
+          <div>
+            <strong>4/4/2016</strong>
+            <div class="muted">Día de su cumpleañps</div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="dot"></div>
+          <div>
+            <strong>Falleció</strong>
+            <div class="muted">24/10/2025</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div>Creado con cariño por Alexis.</div>
+    </footer>
+  </div>
+
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()"><img id="lightboxImg" src="" alt=""></div>
+
+  <script>
+    // --- Personaliza rápido sin tocar HTML ---
+    const defaults = {
+      name: 'Lilo',
+      displayName: 'Lilo',
+      about: 'Un homenaje a su vida, sus travesuras y sus siestas interminables.',
+      age: '9',
+      gender: 'Macho',
+      color: 'Blanco y negro',
+      mainPhoto: document.getElementById('mainPhoto').src
+    }
+
+    // Si quieres, usa los prompts a continuación para cambiar TODO con JS:
+    // setProfile({name: 'Copito', age: 2, gender: 'Hembra', color: 'Marrón', about: '...'});
+    function setProfile({name, displayName, about, age, gender, color, mainPhoto}){
+      if(name) document.getElementById('rabbitName').textContent = name;
+      if(displayName) document.getElementById('nameInline').textContent = displayName;
+      if(about) document.getElementById('aboutText').textContent = about;
+      if(age) document.querySelector('.stat:nth-child(1) div:nth-child(2)').textContent = age + ' años';
+      if(gender) document.querySelector('.stat:nth-child(2) div:nth-child(2)').textContent = gender;
+      if(color) document.querySelector('.stat:nth-child(3) div:nth-child(2)').textContent = color;
+      if(mainPhoto) document.getElementById('mainPhoto').src = mainPhoto;
+    }
+
+    // Lightbox
+    function openLightbox(src){
+      document.getElementById('lightboxImg').src = src;
+      document.getElementById('lightbox').style.display = 'flex';
+    }
+    function closeLightbox(){
+      document.getElementById('lightbox').style.display = 'none';
+    }
+
+    // Imprimir & descargar
+    function printPage(){ window.print(); }
+
+    function downloadPage(){
+      const blob = new Blob([document.documentElement.outerHTML], {type: 'text/html'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'homenaje-conejo.html';
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+
+    // Aplicar valores por defecto al cargar
+    window.addEventListener('DOMContentLoaded', ()=> setProfile(defaults));
+  </script>
+</body>
+</html>
