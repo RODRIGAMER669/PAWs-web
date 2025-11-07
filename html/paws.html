@@ -80,7 +80,7 @@
     <div class="cards-container">
       <!-- Refugio 1 -->
       <div class="card">
-        <img src="../resources/imagenes/ElRefugio.png" alt="Refugio">
+        <img src="../resources/imagenes/protectora1.png" alt="Refugio">
         <div class="card-content">
           <h2>El refugio</h2>
           <p class="location">📍 Madrid, Madrid</p>
@@ -143,12 +143,21 @@
         <span class="badge">Disponible</span>
         <img src="../resources/imagenes/conejo_lilo.jpeg" alt="Conejo Lilo" />
         <div class="info">
-          <h3>Luna</h3>
+          <h3>Lilo</h3>
           <p class="meta">Conejo • 9 años • Pequeño • Macho</p>
           <p class="location">📍 Parla, Madrid</p>
           <p class="refugio">Refugio Alexis</p>
           <p class="descripcion">Lilo es un conejo pequeño y muy cariñoso. Le encanta dormir y jugar.</p>
-          <button>Conocer a Lilo</button>
+          <button id="btnLilo">Conocer a Lilo</button>
+          <script>
+        document.getElementById('btnLilo').addEventListener('click', function() {
+          // Abrir en la misma pestaña:
+          window.location.href = 'homenaje/Conejo_lilo.html';
+
+          // O, para abrir en nueva pestaña:
+          // window.open('https://tusitio.com/lilo.html', '_blank', 'noopener');
+        });
+</script>
         </div>
       </div>
       <!-- Tarjeta 2 -->
