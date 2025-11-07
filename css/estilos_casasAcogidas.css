@@ -1,180 +1,196 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
 body {
-    background-image: url('../imagenes/FondoTemporal2.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('../imagenes/FondoTemporal2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #333;
 }
-
-h1 {
-    color: rgb(255, 255, 255);
-    text-align: left;
-    font-family: "play";
-    font-size: 30px;
-}
-
-h2 {
-    color: rgb(0, 0, 0);
-    text-align: center;
-    font-family: "play";
-    font-size: 50px;
-}
-
-h3 {
-    color: rgb(0, 0, 0);
-    text-align: center;
-}
-
-h4 {
-    color: rgb(255, 255, 255);
-}
-
-h5 {
-    color: rgb(0, 166, 42);
-    text-align: center;
-    font-size: 25px;
-}
-
-h6 {
-    color: rgb(0, 166, 42);
-    text-align: center;
-    font-size: 40px;
-}
-
-p {
-    color: rgb(110, 7, 245);
-}
-
-
-/*MENU*/
 
 .panel-menu {
-    background-color: #43ab43;
-    padding: 10px;
-    text-align: center;
-    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.286);
-    font-family: Arial, sans-serif;
-    margin-top: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #43ab43;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
 }
 
-.menu-objeto {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #43ab43;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 5px;
-    margin: 10px;
-    transition: background-color 0.3s ease;
+.panel-menu h1 {
+  margin: 5px 0;
+  font-size: 28px;
+  font-weight: 700;
 }
 
-/*#menu {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    background-color: #43ab43;
-    padding: 15px 30px;
-    justify-content: flex-end;
-    display: flex;
-    gap: 50px;
-    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.286);
-    z-index: 1000;
-    font-family: Arial, sans-serif;
+.menu-lista {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
 }
 
-#menu a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 600;
-    white-space: nowrap;
-    word-spacing: 8px;
-    transition: color 0.3s ease;
-}*/
-
-
-/*RESEÑAS*/
-.reseñas {
-    display: flex;
-    justify-content: center;
-    margin-top: 70px;
-    flex-wrap: wrap;
-    gap: 100%;
+.menu-lista li {
+  display: inline-block;
+  margin: 0 20px;
 }
 
-.reseñas-objeto {
-    background-color: #000000;
-    color: rgb(0, 255, 0);
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    border-radius: 5px;
-    text-decoration: none;
+.menu-lista a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 17px;
+  padding: 6px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
-.reseñas-objeto2 {
-    background-color: #04ff00;
+.menu-lista a:hover {
+  background-color: #3a933a;
+  transform: scale(1.1);
 }
 
-.contenido-pagina {
-    margin-top: 70px;
-    text-align: center;
+.presentacion {
+  text-align: center;
+  padding-top: 140px;
 }
 
-.boton-visitar-pagina {
-    text-align: center;
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #43ab43;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
+.presentacion h2 {
+  font-size: 48px;
+  color: #2e2e2e;
+  margin-bottom: 25px;
 }
 
-.cuerpo1{
-    display: block;
-    margin: 20px;
-    padding: 20px;
-    text-align: center;
-    background-color:#ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgb(47, 255, 0);
-    color: white;
-    transition: background-color 0.9s;
+.tarjeta-imagen {
+  background-color: rgba(255, 255, 255, 0.9);
+  display: inline-block;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s;
 }
 
-.cuerpo2{
-    display: block;
-    margin: 20px;
-    padding: 20px;
-    text-align: center;
-    background-color:#ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgb(47, 255, 0);
-    color: rgb(60, 255, 0);
-    transition: background-color 2s;
+.tarjeta-imagen:hover {
+  transform: scale(1.03);
 }
 
-.cuerpo3{
-    display: block;
-    margin: 20px;
-    padding: 20px;
-    text-align: center;
-    background-color:#ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgb(47, 255, 0);
-    color: rgb(60, 255, 0);
-    transition: background-color 3s;
+.tarjeta-imagen img {
+  width: 90%;
+  max-width: 800px;
+  border-radius: 10px;
+}
+
+.boton-visitar {
+  display: inline-block;
+  background-color: #43ab43;
+  color: #fff;
+  padding: 14px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 25px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.boton-visitar:hover {
+  background-color: #3a933a;
+  transform: translateY(-3px);
+}
+
+.info {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.cuerpo {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 255, 0, 0.15);
+  margin: 25px 0;
+  padding: 25px;
+  line-height: 1.7;
+  transition: transform 0.3s;
+}
+
+.cuerpo:hover {
+  transform: scale(1.02);
+}
+
+.cuerpo h3 {
+  color: #2b812b;
+}
+
+.cuerpo ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cuerpo ul li::before {
+  content: "🐾 ";
+}
+
+.volver-arriba {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.volver-arriba a {
+  background-color: #43ab43;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.volver-arriba a:hover {
+  background-color: #3a933a;
+  transform: scale(1.1);
 }
 
 .pie-pagina {
-    text-align: center;
-    margin: 20px;
-    padding: 10px;
-    background-color: #43ab43;
-    color: rgb(60, 255, 0);
-    border-radius: 5px;
+  background-color: #43ab43;
+  color: white;
+  text-align: center;
+  padding: 25px 10px;
+  font-size: 15px;
+}
+
+.pie-pagina a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.pie-pagina a:hover {
+  color: #caffc2;
+}
+
+@media (max-width: 768px) {
+  .menu-lista li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .presentacion h2 {
+    font-size: 36px;
+  }
+
+  .cuerpo {
+    padding: 15px;
+  }
+
+  .boton-visitar {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
 }
