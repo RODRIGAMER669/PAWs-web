@@ -117,7 +117,7 @@ Como posibles mejoras futuras, se podría incorporar un sistema de usuarios, una
 <img src="doc/RA3.png" alt="RA3">
 
 - **A.** Se usó una extensión del visual para ver y probar en tiempo real los cambios.
-- **B.** Se ha creado botones, contenedores e imágenes.
+- **B.** Se ha creado botones, contenedores e imágenes., como el formulario, botones para ir a las páginas web de los refugios,etc.
 - **C.** El CSS creado que también puede ser reutilizado y algunas imágenes por defecto si no sale aparece un texto.
 - **D.** Con Javascript hemos podido realizar este objetivo.
 
@@ -130,7 +130,7 @@ Como posibles mejoras futuras, se podría incorporar un sistema de usuarios, una
 - **C.** Hay coherencias en los botones y las acciones de los botones.
 - **D.** Buena distribucción de cada control.
 - **E.** Control adecuado en cada caso por ejemplo en el formulario tenemos contenedores ya que se escribirá en ese sitio y no en otro lado.
-- **F.** Legibilidad en los colores y fuentes. 
+- **F.** Legibilidad en los colores y fuentes como p
 - **G.** La aplicación no genera mensajes, solo genera archivos en la página web del homenaje.
 
 
